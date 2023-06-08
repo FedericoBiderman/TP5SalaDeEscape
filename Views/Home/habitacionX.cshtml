@@ -1,0 +1,20 @@
+@{
+    ViewBag.Title = "Habitación X";
+}
+
+<h1>Habitación X</h1>
+
+<h2>Título de la Habitación</h2>
+<p>Texto relatando lo que se encuentra en la sala y lo que hay que hacer</p>
+
+<img src="ruta_imagen" alt="Elemento Multimedia">
+
+    <form action="@Url.Action("Validar", "Juego", new { habitacion = "X" })" method="post">
+    <label for="clave">Clave:</label>
+    <input type="text" id="clave" name="clave">
+
+    <button type="submit">VALIDAR</button>
+
+    <button onclick="alert('Pista 1: Mirá las paredes...')">Pista 1</button>
+    <button onclick="alert('Pista 2: Busca en el suelo...')">Pista 2</button>
+</form>
