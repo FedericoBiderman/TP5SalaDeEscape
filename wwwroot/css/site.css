@@ -18,11 +18,47 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  height: 100%;
+  width: 100%;
 }
+
+.container {max-width: 100%; padding: 0;}
 
 img
 {
  width: auto;
  height: 175px;
 }
+
+.home{
+  background-image:url(/Imagenes/FondoHome.jpg);
+  padding:100px;
+  height:100%;
+  background-position:inherit;
+}
+
+.Inicio{
+  color:gold;
+}
+
+.tutorial{
+  background-image:url(/Imagenes/Fondo.jpg);
+  padding:100px;
+  height:100%;
+  background-position:inherit;
+}
+.tutorial1{
+  color:aqua;
+}
+.tutorial2{
+  color:aliceblue;
+
+}
+
+li:hover
+{
+color:#eeff00;
+}
+
+
+main {width: 100%; height: 100%; height:calc(100vh - 82px)}
