@@ -9,7 +9,7 @@
 
 <img src="ruta_imagen" alt="Elemento Multimedia">
 
-    <form action="@Url.Action("Validar", "Juego", new { habitacion = "X" })" method="post">
+    <form method="post" action='@Url.Action("Validar", "Juego", new { habitacion = "X" })'>
     <label for="clave">Clave:</label>
     <input type="text" id="clave" name="clave">
 

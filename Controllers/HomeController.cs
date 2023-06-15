@@ -18,6 +18,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Creditos()
+    {
+        return View();
+    }
+
     public IActionResult Tutorial()
     {
         return View();
@@ -30,7 +35,7 @@ public class HomeController : Controller
         return View(Sala);
     }
     
-    public IActionResult Habitacion(int sala, string clave)
+    public IActionResult habitacionX(int sala, string clave)
     {
           int estadoJuego = Escape.GetEstadoJuego();
 

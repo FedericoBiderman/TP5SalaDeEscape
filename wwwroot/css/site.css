@@ -24,6 +24,18 @@ body {
 
 .container {max-width: 100%; padding: 0;}
 
+.creditos{
+  background-image: url(/Imagenes/Fondocreditos.jpg);
+  padding: 100px;
+  height: 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.titulocreditos{
+color:#eeff00;
+}
+
 img
 {
  width: auto;
@@ -53,6 +65,15 @@ img
 .tutorial2{
   color:aliceblue;
 
+}
+
+p:hover{
+color:#eeff00;
+background-color: #258cfb;
+}
+
+p{
+  color:aliceblue;
 }
 
 li:hover
