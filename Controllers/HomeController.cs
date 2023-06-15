@@ -30,12 +30,12 @@ public class HomeController : Controller
 
     public IActionResult Comenzar()
     {
+        Escape.InicializarJuego();
         int estadoJuego = Escape.GetEstadoJuego();
-        string Sala = "Habitacion : " + estadoJuego;
-        return View(Sala);
+        return View("habitacion"+ estadoJuego);
     }
     
-    public IActionResult habitacionX(int sala, string clave)
+    [HttpPost] public IActionResult habitacionX(int sala, string clave)
     {
           int estadoJuego = Escape.GetEstadoJuego();
 

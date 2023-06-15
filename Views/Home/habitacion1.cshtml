@@ -1,24 +1,22 @@
 @{
     ViewBag.Title = "Habitación X";
 }
-
-<h1>Habitación X</h1>
-
-<h2>Título de la Habitación</h2>
-<p>Texto relatando lo que se encuentra en la sala y lo que hay que hacer</p>
-
-<img src="ruta_imagen" alt="Elemento Multimedia">
-
-    <form method="post" action='@Url.Action("Validar", "Juego", new { habitacion = "X" })'>
+<div class="habitacion1">
+<div class="titulohabitacion1">
+<h1>Habitación 1</h1>
+<h2>Mundial Mexico 1986</h2>
+<p>Se encuentran en una habitación que representa el famoso Mundial del 1986 y como la gran Argentina comandada por su capitan, Diego Armando Maradona, alzaron la gloria. Deben encontrar el nombre de uno de los maximos referentes de ese equipo que quedara guardado en la historia.</p>
+</div>
+    <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
     <input type="text" id="clave" name="clave">
-
+    <input type="hidden" id="sala" value="1">
     <button type="submit">VALIDAR</button>
-
-    <button onclick="alert('Pista 1: Mirá las paredes...')">Pista 1</button>
-    <button onclick="alert('Pista 2: Busca en el suelo...')">Pista 2</button>
+    <button onclick="alert('Con estrategia y picardía me guió, en México 86 mi gloria encontró. Con Diego a mi lado, el título logré,enfrentando rivales sin temer.')">Adivinanza</button>
+    <button onclick="alert('Esto no tiene bebida alcoholica señora, tiene gatorei')">Pista 1</button>
+    <button onclick="alert('¿Quién soy yo en la historia del fútbol,el técnico que triunfó en un Mundial?Si piensas en el pasado con devoción,descubrirás mi nombre en esta ocasión.')">Pista 2</button>
 </form>
-
+</div>
 
 
 <!-- Habitación 1: "El Gol del Siglo"
