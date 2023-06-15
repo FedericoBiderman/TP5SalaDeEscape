@@ -1,0 +1,19 @@
+@{
+    ViewBag.Title = "Habitación X";
+}
+<div class="habitacion3">
+<div class="titulohabitacion3">
+<h1>Habitación 3</h1>
+<h2>Mundial Brasil 1950</h2>
+<p>La habitación representa el histórico partido entre Uruguay y Brasil en la final del Mundial de 1950, conocido como el "Maracanazo". Deben resolver desafíos relacionados con este trascendental encuentro para continuar.</p>
+</div>
+    <form method="post" action='@Url.Action("habitacionX", "Home")'>
+    <label for="clave">Clave:</label>
+    <input type="text" id="clave" name="clave">
+    <input type="hidden" id="sala" value="3">
+    <button type="submit">VALIDAR</button>
+    <button onclick="alert('En blanco y negro solían brillar, pero tras un fracaso quisieron cambiar. En verde y amarillo decidieron jugar, y al mundo entero conquistar. ¿Qué equipo es el que digo, que su camiseta fue su abrigo, y con nuevos colores en el escenario, triunfos y gloria ha cosechado?')">Adivinanza</button>
+    <button onclick="alert('Jogo Bonito')">Pista 1</button>
+    <button onclick="alert('Anfitriones del mundial')">Pista 2</button>
+</form>
+</div>

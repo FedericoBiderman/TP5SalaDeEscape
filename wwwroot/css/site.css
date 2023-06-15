@@ -92,7 +92,15 @@ color:#eeff00;
   background-repeat:no-repeat;
   color:rgb(252, 0, 34);
 }
-
+.habitacion2
+{
+  background-image:url(/Imagenes/FondoSala2.jpg);
+  padding: 100px;
+  height: 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:rgb(252, 0, 34);
+}
 .habitacion1 p :hover{
   color:rgb(255, 255, 255);
   background-color: rgb(209, 163, 10);

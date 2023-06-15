@@ -5,7 +5,7 @@ static class Escape
 
     public static void InicializarJuego()
     {
-        incognitasSalas=new string[]{"Bilardo", "Clave 2", "Clave 3", "Clave 4"};
+        incognitasSalas=new string[]{"Bilardo", "Puskas", "Brasil", "Clave 4"};
         estadoJuego=1;
     }
 
