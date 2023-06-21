@@ -9,8 +9,8 @@
 </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
-    <input type="text" id="clave" name="clave">
-    <input type="hidden" id="sala" value="1">
+    <input autocomplete= "off" type="text" id="clave" required name="clave">
+    <input type="hidden" id="sala" name="sala" value="1">
     <button type="submit">VALIDAR</button>
     <button onclick="alert('Con estrategia y picardía me guió, en México 86 mi gloria encontró. Con Diego a mi lado, el título logré,enfrentando rivales sin temer.')">Adivinanza</button>
     <button onclick="alert('Esto no tiene bebida alcoholica señora, tiene gatorei')">Pista 1</button>

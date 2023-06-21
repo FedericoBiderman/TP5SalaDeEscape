@@ -1,8 +1,8 @@
 @{
     ViewBag.Title = "Habitación X";
 }
-<p>Felicidades has pasado a la habitacion 2</p>
 <div class="habitacion2">
+ <p>Felicidades has pasado a la habitacion 2</p>
 <div class="titulohabitacion2">
 <h1>Habitación 2</h1>
 <h2>Mundial Suiza 1954</h2>
@@ -11,8 +11,8 @@
 </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
-    <input type="text" id="clave" name="clave">
-    <input type="hidden" id="sala" value="2">
+    <input autocomplete= "off" type="text" id="clave" required name="clave">
+    <input type="hidden" id="sala" name="sala" value="2">
     <button type="submit">VALIDAR</button>
     <button onclick="alert('En la cancha brilló con esplendor,en la final del mundial causó fervor.En su palmarés quedó marcado,aunque el trofeo se le haya escapado. Con magia en sus botines, dejó su huella, su talento y habilidad, historia nos cuenta. Un goleador imparable, sin parangón, a pesar del resultado, en la memoria vivirá su canción.')">Adivinanza</button>
     <button onclick="alert('Le dicen El Panchito / Y el Cañoncito pum')">Pista 1</button>

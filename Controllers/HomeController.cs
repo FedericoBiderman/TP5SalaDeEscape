@@ -32,6 +32,7 @@ public class HomeController : Controller
     {
         Escape.InicializarJuego();
         int estadoJuego = Escape.GetEstadoJuego();
+        Console.WriteLine(estadoJuego);
         return View("habitacion"+ estadoJuego);
     }
     
@@ -41,26 +42,26 @@ public class HomeController : Controller
 
             if (sala != estadoJuego)
             {
-                string salaAResolver = "Habitacion : " + estadoJuego;
-                return View(salaAResolver);
+                
+                ViewBag.MensajeError="Estas resolviendo una sala equivocada";
             }
-
-            if (Escape.ResolverSala(sala, clave))
+            else
             {
-                estadoJuego = Escape.GetEstadoJuego();
+                
+                bool sino= Escape.ResolverSala(sala,clave);
+                
 
-                if (estadoJuego > 4)
+                if(sino==false)
                 {
-                    return View("Felicidades, has completado la sala de escape");
+                    ViewBag.MensajeError = "Respuesta incorrecta.";
                 }
-
-                string siguienteSala = "Habitacion : " + estadoJuego;
-                return View(siguienteSala);
             }
 
-            ViewBag.Error = "Respuesta incorrecta.";
-            return View("Habitacion : " + sala);
+            if(Escape.GetEstadoJuego()>4) return View("Victoria");
+
+            return View("habitacion" + Escape.GetEstadoJuego());
     }
+
 
     public IActionResult Privacy()
     {
