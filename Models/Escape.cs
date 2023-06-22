@@ -16,12 +16,12 @@ static class Escape
 
     public static bool ResolverSala(int sala, string Incognita)
     {
-            //pojngan que haga tolower en los 2
             if (Incognita.ToLower() == incognitasSalas[sala - 1].ToLower())
             {
-                estadoJuego=estadoJuego+1;
+                estadoJuego++;
                 return true;
             }
             return false;
+            
     }
 }

@@ -5,8 +5,12 @@
 <div class="titulohabitacion1">
 <h1>Habitación 1</h1>
 <h2>Mundial Mexico 1986</h2>
+<img src="\Imagenes\personaentrando.jpeg">
 <p>Se encuentran en una habitación que representa el famoso Mundial del 1986 y como la gran Argentina comandada por su capitan, Diego Armando Maradona, alzaron la gloria. Deben encontrar el nombre de uno de los maximos referentes de ese equipo que quedara guardado en la historia.</p>
-<h5>"Con estrategia y picardía me guió, en México 86 mi gloria encontró. Con Diego a mi lado, el título logré,enfrentando rivales sin temer."</h5>
+<h5>"Con estrategia y picardía me guió, en México 86 mi gloria encontró. Con Diego a mi lado, el título logré, enfrentando rivales sin temer."</h5>
+<img src="\Imagenes\Imagensala1.jpg">
+<img src="\Imagenes\Imagensala1_2.jpg">
+<img src="\Imagenes\Imagensala1_3.jpeg">
 </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
@@ -16,4 +20,5 @@
     <button onclick="alert('Esto no tiene bebida alcoholica señora, tiene gatorei')">Pista 1</button>
     <button onclick="alert('¿Quién soy yo en la historia del fútbol,el técnico que triunfó en un Mundial?Si piensas en el pasado con devoción,descubrirás mi nombre en esta ocasión.')">Pista 2</button>
 </form>
+  <p>@ViewBag.MensajeError</p>
 </div>

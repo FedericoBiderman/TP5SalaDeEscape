@@ -5,8 +5,12 @@
 <div class="titulohabitacion3">
 <h1>Habitación 3</h1>
 <h2>Mundial Brasil 1950</h2>
+ <img src="\Imagenes\personaentrando.jpeg">
 <p>La habitación representa el histórico partido entre Uruguay y Brasil en la final del Mundial de 1950, conocido como el "Maracanazo". Deben resolver desafíos relacionados con este trascendental encuentro para continuar.</p>
 <h5>"En blanco y negro solían brillar, pero tras un fracaso quisieron cambiar. En verde y amarillo decidieron jugar, y al mundo entero conquistar. ¿Qué equipo es el que digo, que su camiseta fue su abrigo, y con nuevos colores en el escenario, triunfos y gloria ha cosechado?"</h5>
+ <img src="\Imagenes\imagensala3.jfif">
+  <img src="\Imagenes\imagensala3_2.jfif">
+   <img src="\Imagenes\imagensala3_3.jpg">
 </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
@@ -16,4 +20,5 @@
     <button onclick="alert('Creadores del Jogo Bonito')">Pista 1</button>
     <button onclick="alert('Anfitriones del mundial')">Pista 2</button>
 </form>
+  <p>@ViewBag.MensajeError</p>
 </div>

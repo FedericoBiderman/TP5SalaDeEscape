@@ -36,32 +36,33 @@ public class HomeController : Controller
         return View("habitacion"+ estadoJuego);
     }
     
-    [HttpPost] public IActionResult habitacionX(int sala, string clave)
+    [HttpPost] public IActionResult habitacionX(int sala, string clave, int vidas)
     {
           int estadoJuego = Escape.GetEstadoJuego();
-
-            if (sala != estadoJuego)
+            if (sala == estadoJuego)
             {
-                
-                ViewBag.MensajeError="Estas resolviendo una sala equivocada";
-            }
-            else
-            {
-                
                 bool sino= Escape.ResolverSala(sala,clave);
-                
-
+                ViewBag.MensajeError = "";
                 if(sino==false)
                 {
                     ViewBag.MensajeError = "Respuesta incorrecta.";
                 }
             }
 
-            if(Escape.GetEstadoJuego()>4) return View("Victoria");
-
+            if(Escape.GetEstadoJuego()>4)
+            {
+                return View("victoria");
+            } 
+            else
+            {
             return View("habitacion" + Escape.GetEstadoJuego());
+            }
     }
 
+    public IActionResult victoria()
+    {
+        return View();
+    }
 
     public IActionResult Privacy()
     {

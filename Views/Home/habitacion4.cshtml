@@ -6,8 +6,12 @@
 <div class="titulohabitacion4">
 <h1>Habitación 4</h1>
 <h2>Mundial Qatar 2022</h2>
+ <img src="\Imagenes\personaentrando.jpeg">
 <p>Esta habitación está ambientada en el Mundial de 2022, conocido por la sorprendente victoria de la selección Argentina comandada por Lionel Messi. Deben resolver enigmas relacionados con este emocionante evento para avanzar.</p>
 <h5>"Soy un genio del fútbol, un astro sin igual, En el campo de juego, nadie me puede igualar. Recorrí el mundo en busca de la gloria, En la Copa del Mundo dejé una historia. Mis goles y regates hicieron temblar, A las defensas que intentaban parar. Con la Albiceleste en mis botas, Brillé en el Mundial, con una sola derrota. Mi humildad es tan grande como mi talento, A pesar de los elogios, siempre me mantengo atento. Pasar desapercibido no es mi camino, Mi nombre es sinónimo de grandeza y destino." </h5>
+ <img src="\Imagenes\imagensala4.jpg">
+ <img src="\Imagenes\imagensala4_2.jpg">
+ <img src="\Imagenes\imagensala4_3.jfif">
 </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
     <label for="clave">Clave:</label>
@@ -17,4 +21,5 @@
     <button onclick="alert('The Little Boy from Rosario, Argentina')">Pista 1</button>
     <button onclick="alert('Actualmente juega en el Inter de Miami')">Pista 2</button>
 </form>
+  <p>@ViewBag.MensajeError</p>
 </div>
