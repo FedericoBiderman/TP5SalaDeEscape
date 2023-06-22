@@ -1,21 +1,19 @@
 @{
     ViewBag.Title = "Habitación X";
 }
-<div class="habitacion2">
- <p>Felicidades has pasado a la habitacion 2</p>
-<div class="titulohabitacion2">
-<h1>Habitación 2</h1>
-<h2>Mundial Suiza 1954</h2>
-
-<p>Esta habitación está ambientada en el Mundial de 1954, conocido por la sorprendente victoria de la selección alemana ante Hungría en la final. Deben resolver enigmas relacionados con este emocionante evento para avanzar.</p>
-</div>
+<div class= habitacion2>
+    <div class="titulohabitacion2">
+        <h1>Habitación 2</h1>
+        <h2>Mundial Suiza 1954</h2>
+        <p>Esta habitación está ambientada en el Mundial de 1954, conocido por la sorprendente victoria de la selección alemana ante Hungría en la final. Deben resolver enigmas relacionados con este emocionante evento para avanzar.</p>
+        <h5>"En la cancha brilló con esplendor,en la final del mundial causó fervor.En su palmarés quedó marcado,aunque el trofeo se le haya escapado. Con magia en sus botines, dejó su huella, su talento y habilidad, historia nos cuenta. Un goleador imparable, sin parangón, a pesar del resultado, en la memoria vivirá su canción."</h5>
+    </div>
     <form method="post" action='@Url.Action("habitacionX", "Home")'>
-    <label for="clave">Clave:</label>
-    <input autocomplete= "off" type="text" id="clave" required name="clave">
-    <input type="hidden" id="sala" name="sala" value="2">
-    <button type="submit">VALIDAR</button>
-    <button onclick="alert('En la cancha brilló con esplendor,en la final del mundial causó fervor.En su palmarés quedó marcado,aunque el trofeo se le haya escapado. Con magia en sus botines, dejó su huella, su talento y habilidad, historia nos cuenta. Un goleador imparable, sin parangón, a pesar del resultado, en la memoria vivirá su canción.')">Adivinanza</button>
-    <button onclick="alert('Le dicen El Panchito / Y el Cañoncito pum')">Pista 1</button>
-    <button onclick="alert('Ganador de 5 champions con el Real Madrid junto a Alfredo Di Stefano y Paco Gento en la delantera')">Pista 2</button>
-</form>
+        <label for="clave">Clave:</label>
+        <input autocomplete= "off" type="text" id="clave" required name="clave">
+        <input type="hidden" id="sala" name="sala" value="2">
+        <button type="submit">VALIDAR</button>
+        <button onclick="alert('Le dicen El Panchito / Y el Cañoncito pum')">Pista 1</button>
+        <button onclick="alert('Ganador de 5 champions con el Real Madrid junto a Alfredo Di Stefano y Paco Gento en la delantera')">Pista 2</button>
+    </form>
 </div>

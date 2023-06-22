@@ -33,7 +33,7 @@ body {
 }
 
 .titulocreditos{
-color:#eeff00;
+color:gold;
 }
 
 img
@@ -43,21 +43,28 @@ img
 }
 
 .home{
-  background-image:url(/Imagenes/FondoHome.jpg);
-  padding:100px;
-  height:100%;
+  background-image:url(/Imagenes/FondoInicio.jpg);
+  padding: 100px;
+  height: 100%;
   background-position:inherit;
+  background-repeat:no-repeat;
 }
 
 .Inicio{
   color:gold;
+  padding: 100px;
+}
+
+.enlaces{
+  float:right;
 }
 
 .tutorial{
-  background-image:url(/Imagenes/Fondo.jpg);
-  padding:100px;
-  height:100%;
-  background-position:inherit;
+  background-image:url(/Imagenes/FondoTutorial.jpg);
+  padding: 100px;
+  height: 100%;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 .tutorial1{
   color:aqua;
@@ -67,13 +74,9 @@ img
 
 }
 
-p:hover{
-color:#eeff00;
-background-color: #258cfb;
-}
-
 p{
   color:aliceblue;
+  background-color: rgba(46, 46, 46, 0.7)
 }
 
 li:hover
@@ -87,19 +90,16 @@ color:#eeff00;
   background-image:url(/Imagenes/FondoSala1.jpg);
   padding: 100px;
   height: 100%;
-  background-size: 100% 100%; 
-  background-position:top;
+  background-position:inherit;
   background-repeat:no-repeat;
-  color:rgb(252, 0, 34);
 }
 .habitacion2
 {
   background-image:url(/Imagenes/FondoSala2.jpg);
   padding: 100px;
   height: 100%;
-  background-position:initial;
+  background-position:center;
   background-repeat:no-repeat;
-  color:rgb(252, 0, 34);
 }
 
 .habitacion3
@@ -109,7 +109,6 @@ color:#eeff00;
   height: 100%;
   background-position:center;
   background-repeat:no-repeat;
-  color:rgb(252, 0, 34);
 }
 
 .habitacion4
@@ -119,24 +118,19 @@ color:#eeff00;
   height: 100%;
   background-position:center;
   background-repeat:no-repeat;
-  color:rgb(252, 0, 34);
-}
-
-
-.habitacion1 p :hover{
-  color:rgb(255, 255, 255);
-  background-color: rgb(209, 163, 10);
 }
 
 h1, h2{
 color:rgb(255, 251, 0);
-
+}
+h5, h6{
+  color:#e9b118;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #077516b4;
+  background-color: #b88c3bb4;
   overflow: hidden;
 }|
 
@@ -146,7 +140,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  color: rgba(12, 139, 40, 0.712);
+  color: rgba(151, 150, 78, 0.712);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -158,6 +152,14 @@ nav ul li a:hover {
 ul li a
 {
 font-size:larger;
+}
+
+.victoria{
+  background-image: url(/Imagenes/Ganador.jpg);
+}
+
+label{
+  color:white;
 }
 
 main {width: 100%; height: 100%; height:calc(100vh - 82px)}
